@@ -12,10 +12,6 @@ def read_root():
 def get_saludo(nombre: str):
     return{"message": f"Hola, {nombre}!" }
 
-#Ruta raiz
-@app.get('/')
-def read_root():
-    return {'message': 'Hello World'}
 
 #Metodo para generar una muestra falsa de usuarios y hacer la comprobacion del correcto funcionamiento del sistema
 def generateUsers(n : int = 100):
